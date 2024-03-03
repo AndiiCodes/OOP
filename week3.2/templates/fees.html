@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>fees</h1>
+    
+    <form action="/fees" method="POST">
+        <div class="container">
+
+    <label for="name">Enter your name</label>
+    <input type="text" name="name">
+    
+    <label for="id">Enter your student ID</label>
+    <input type="text" name="id">
+
+    <label for="institution ">institution name</label>
+    <input type="text" name="institution">
+
+    <label for="campus-l ">campus location</label>
+    <input type="text" name="campus-l">
+
+    <label for="program-c ">Program Code</label>
+    <input type="text" name="program-c">
+
+    <label for="program-name ">Program Name</label>
+    <input type="text" name="program-name">
+
+    <label for="course-c ">Course Code</label>
+    <input type="text" name="course-c">
+    
+    <button type="submit" class="btn">Submit</button>
+</div>
+</form>
+
+    {{content}}
+
+   
+</body>
+</html>
