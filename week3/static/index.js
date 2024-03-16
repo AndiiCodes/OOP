@@ -15,3 +15,5 @@ function next() {
         nextButton.classList.add('hidden');
     }
 }
+
+
